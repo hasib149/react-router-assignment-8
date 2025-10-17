@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="btn btn-ghost text-xltext-5xl font-bold bg-gradient-to-r from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent"
+          className="btn btn-ghost text-xl  font-bold bg-gradient-to-r from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent"
         >
           <img className="w-10" src="/logo.png" alt="" /> HERO.IO
         </Link>

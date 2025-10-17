@@ -1,7 +1,14 @@
 import React from "react";
 import { FaAppStoreIos, FaGooglePlay } from "react-icons/fa";
+import useProduct from "../CustomHooks/useProduct";
+import ProductCard from "./ProductCard";
+import { Link } from "react-router";
 
 const Home = () => {
+  const { loading, error, products } = useProduct();
+  // console.log(products);
+
+  const featuredProducts = products?.slice(0, 8);
   return (
     <div>
       {/* Hero Section */}
@@ -15,7 +22,7 @@ const Home = () => {
         </h2>
         <p className="max-w-xl mt-4 text-sm sm:text-base text-gray-600">
           At HERO.IO, we craft innovative apps designed to make everyday life
-          simpler, smarter, and more exciting.{" "}
+          simpler, smarter, and more exciting.
           <br className="hidden sm:block" />
           Our goal is to turn your ideas into digital experiences that truly
           make an impact.
@@ -52,7 +59,7 @@ const Home = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] pt-12 pb-12 text-center px-4 sm:px-6 lg:px-8">
+      <div className=" bg-gradient-to-r from-[#632EE3] to-[#9F62F2] pt-12 pb-12 text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-white font-semibold text-2xl sm:text-2xl lg:text-3xl">
           Trusted by Millions, Built for You
         </h2>
@@ -89,9 +96,19 @@ const Home = () => {
           </p>
         </div>
         {/* card */}
-        <div className="mt-4">
-          <div>
-            
+        <div className="mt-14">
+          <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredProducts?.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+          <div className="flex justify-center mt-6">
+            <Link
+              to="/apps"
+              className="px-6 mt-8 mb-16 py-2 rounded-md font-semibold text-white bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 transition-all duration-300 shadow-lg"
+            >
+              Show All
+            </Link>
           </div>
         </div>
       </div>
