@@ -56,7 +56,7 @@ const Apps = () => {
             <ProductCard key={product.id} product={product} />
           ))
         ) : (
-          <p className="text-center col-span-full p-20 text-4xl bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300">User not found</p>
+          <p className="text-center col-span-full p-20 text-4xl bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300">No Apps found</p>
         )}
       </div>
     </div>

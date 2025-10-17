@@ -1,8 +1,14 @@
 import React from "react";
-import { FaAppStoreIos, FaGooglePlay } from "react-icons/fa";
+import {
+  FaAppStoreIos,
+  FaDownload,
+  FaGooglePlay,
+  FaStar,
+} from "react-icons/fa";
 import useProduct from "../CustomHooks/useProduct";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Home = () => {
   const { loading, error, products } = useProduct();
@@ -63,13 +69,16 @@ const Home = () => {
         <h2 className="text-white font-semibold text-2xl sm:text-2xl lg:text-3xl">
           Trusted by Millions, Built for You
         </h2>
-        <div className="flex flex-col sm:flex-row gap-7 lg:gap-14 items-center justify-center mt-8">
+        <div className="flex flex-col sm:flex-row gap-6 lg:gap-12 items-center justify-center mt-8">
           <div className="space-y-2">
             <p className="text-gray-300 text-xs sm:text-sm">Total Downloads</p>
             <h2 className="text-white font-bold text-2xl sm:text-3xl">29.6M</h2>
             <p className="text-gray-300 text-xs sm:text-sm">
               21% more than last month
             </p>
+          </div>
+          <div className="text-white text-4xl">
+            <FaDownload />
           </div>
           <div className="space-y-2">
             <p className="text-gray-300 text-xs sm:text-sm">Total Reviews</p>
@@ -78,12 +87,18 @@ const Home = () => {
               46% more than last month
             </p>
           </div>
+          <div className="text-white text-4xl">
+            <FaStar />
+          </div>
           <div className="space-y-2">
             <p className="text-gray-300 text-xs sm:text-sm">Active Apps</p>
             <h2 className="text-white font-bold text-2xl sm:text-3xl">132+</h2>
             <p className="text-gray-300 text-xs sm:text-sm">
               31 more will Launch
             </p>
+          </div>
+          <div className="text-white text-4xl">
+            <IoLogoGooglePlaystore />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://www.apple.com/newsroom/images/product/apps/standard/Apple-App-Store-Awards-2022-Trophy_inline.jpg.slideshow-large_2x.jpg",
+    "image": "/public/demo-app (2).webp",
     "title": "Photo Editor Deluxe",
     "companyName": "Creative Studio Apps",
     "id": 1004,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyb2EHRfVW3jr8UePOWfulq4DTzXEHlBxXA&s",
+    "image": "/demo-app (1).webp",
     "title": "Quick Recipe Finder",
     "companyName": "Gourmet Mobile Solutions",
     "id": 1006,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCoQzEpFNfALv5YE0siEBT72P4lg6C079xA&s",
+    "image": "/demo-app (3).webp",
     "title": "Stock Market Simulator",
     "companyName": "Finance Futures Group",
     "id": 1007,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://w0.peakpx.com/wallpaper/304/741/HD-wallpaper-3d-world-map-with-flags-world-map-concept-artwork-3d-world-map-creative-world-map-3d-art-world-maps.jpg",
+    "image": "/demo-app (4).webp",
     "title": "World Atlas 3D",
     "companyName": "Geo-Tech Mapping",
     "id": 1008,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVziXwB0l7B1J8ViUnOQousHERZi5jprGDPQ&s",
+    "image": "/demo-app (5).webp",
     "title": "Mindful Meditation",
     "companyName": "Zen Life Apps",
     "id": 1010,

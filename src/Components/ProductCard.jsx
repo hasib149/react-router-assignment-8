@@ -1,13 +1,20 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const ProductCard = ({ product }) => {
-//   console.log(product);
-  const { title, ratingAvg, image, downloads } = product;
+  //   console.log(product);
+  const navigate = useNavigate();
+  const goToUserDetails = () => {
+    navigate(`/userdetails/${id}`);
+  };
+  const { title, ratingAvg, image, downloads, id } = product;
   return (
-    <div className="card bg-base-100 w-full shadow-2xl transform transition-transform duration-300 hover:scale-105">
+    <div
+      onClick={goToUserDetails}
+      className="card bg-base-100 w-full shadow-2xl transform transition-transform duration-300 hover:scale-105"
+    >
       <figure className="p-3">
         <img
           src={image}
