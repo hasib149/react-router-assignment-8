@@ -1,0 +1,452 @@
+[
+  {
+    "image": "https://www.apple.com/newsroom/images/product/apps/standard/Apple-App-Store-Awards-2022-Trophy_inline.jpg.slideshow-large_2x.jpg",
+    "title": "Photo Editor Deluxe",
+    "companyName": "Creative Studio Apps",
+    "id": 1004,
+    "description": "Advanced photo editing with filters and effects.",
+    "size": 98,
+    "reviews": 50000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 33500 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjXCQ_au8XggZE9JSkGN98gOwpDhUzLrc2g&s",
+    "title": "Code Learn Academy",
+    "companyName": "Dev Path Education",
+    "id": 1005,
+    "description": "Learn to code with interactive lessons.",
+    "size": 75,
+    "reviews": 15000,
+    "ratingAvg": 4.1,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 6400 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1LzHNregFlx6tNJZ-mh1s3I3I6rr7RfpwyA&s",
+    "title": "Quick Recipe Finder",
+    "companyName": "Gourmet Mobile Solutions",
+    "id": 1006,
+    "description": "Find recipes based on ingredients you have.",
+    "size": 40,
+    "reviews": 32000,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 18200 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCoQzEpFNfALv5YE0siEBT72P4lg6C079xA&s",
+    "title": "Stock Market Simulator",
+    "companyName": "Finance Futures Group",
+    "id": 1007,
+    "description": "Practice trading with virtual money.",
+    "size": 60,
+    "reviews": 18000,
+    "ratingAvg": 4.4,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 7500 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "image": "https://w0.peakpx.com/wallpaper/304/741/HD-wallpaper-3d-world-map-with-flags-world-map-concept-artwork-3d-world-map-creative-world-map-3d-art-world-maps.jpg",
+    "title": "World Atlas 3D",
+    "companyName": "Geo-Tech Mapping",
+    "id": 1008,
+    "description": "Interactive 3D map of the world.",
+    "size": 450,
+    "reviews": 10500,
+    "ratingAvg": 4.0,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 2800 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/zpxKgwPK5_0iQ-_C6GiZYvsT05ODgNHSaY0qELSVsLSj4w78MsyR9moD2VwLa3FrUg",
+    "title": "Secure VPN Proxy",
+    "companyName": "Privacy Shield Systems",
+    "id": 1009,
+    "description": "Fast and reliable virtual private network.",
+    "size": 35,
+    "reviews": 80000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 52500 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVziXwB0l7B1J8ViUnOQousHERZi5jprGDPQ&s",
+    "title": "Mindful Meditation",
+    "companyName": "Zen Life Apps",
+    "id": 1010,
+    "description": "Guided meditations for stress relief and sleep.",
+    "size": 150,
+    "reviews": 45000,
+    "ratingAvg": 4.6,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2800 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 26000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN0RT1qZ-v3FIIJBDaBqjNnIHa0SYgO2hM5A&s",
+    "title": "Language Buddy",
+    "companyName": "Global Speak Solutions",
+    "id": 1011,
+    "description": "Learn new languages with fun quizzes.",
+    "size": 110,
+    "reviews": 22000,
+    "ratingAvg": 4.2,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/bvwfA5c4O9vHq-b6dXtnPSNtdSe7nWkKwNxP60lE_MNLMoIl4rV3t2743xJSlLFKYJQ",
+    "title": "3D Racing Master",
+    "companyName": "Velocity Games Studios",
+    "id": 1012,
+    "description": "High-octane car racing simulation game.",
+    "size": 2200,
+    "reviews": 75000,
+    "ratingAvg": 4.5,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 7500 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 40000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktkI27lN0J49V2ckZRmYk8z0MFajQLRSNBQ&s",
+    "title": "Expense Tracker Easy",
+    "companyName": "Budget Smart Apps",
+    "id": 1013,
+    "description": "Manage your daily spending effortlessly.",
+    "size": 30,
+    "reviews": 11000,
+    "ratingAvg": 4.8,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-51fU42qx6Cm8JQPIjrrGMkPGa8EHISjWQ&s",
+    "title": "Weather Forecast Live",
+    "companyName": "Skyline Info Systems",
+    "id": 1014,
+    "description": "Accurate, real-time weather updates and alerts.",
+    "size": 45,
+    "reviews": 60000,
+    "ratingAvg": 4.3,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 6500 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw16W2YE4i0awLGvsNtdbNrdEt5YyxMtjGCQ&s",
+    "title": "Magic Drawing Pad",
+    "companyName": "Artistic Tools Co.",
+    "id": 1015,
+    "description": "A simple yet powerful digital canvas.",
+    "size": 80,
+    "reviews": 9000,
+    "ratingAvg": 4.4,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3600 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0K3s5pck1ZUzje5vJ1yzPVNhk5KMsWhIv5Q&s",
+    "title": "Podcast Player Go",
+    "companyName": "Audio Stream Media",
+    "id": 1016,
+    "description": "Stream and download your favorite podcasts.",
+    "size": 55,
+    "reviews": 16000,
+    "ratingAvg": 4.7,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 9700 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/AQ3WKI1QFveemdgRP9317RXuKbYWJEh1Z-HczaGYP4MpvOzJoI660DMDHkAUra5wQ84=w240-h480-rw",
+    "title": "Flashlight Utility Pro",
+    "companyName": "Simple Tools Inc.",
+    "id": 1017,
+    "description": "Brightest LED flashlight with strobe feature.",
+    "size": 15,
+    "reviews": 95000,
+    "ratingAvg": 3.9,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 40000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7x70k-h5hWzb2Hp7nkWgnorjC_x2_pz5rQ&s",
+    "title": "Tower Defense Legend",
+    "companyName": "Castle Guard Games",
+    "id": 1018,
+    "description": "A strategic tower defense game with epic battles.",
+    "size": 1200,
+    "reviews": 38000,
+    "ratingAvg": 4.6,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 20100 }
+    ]
+  },
+  {
+    "image": "https://kindlebd.com/wp-content/uploads/2025/03/Kindle-Paperwhite-Kids-500x500.png",
+    "title": "E-Book Reader",
+    "companyName": "Digital Library Solutions",
+    "id": 1019,
+    "description": "Read your favorite e-books with customizable settings.",
+    "size": 65,
+    "reviews": 19000,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMaMmq4PKcgmcw9k7elnaESZgSJ4kzEMm4g&s",
+    "title": "Home Security Monitor",
+    "companyName": "Smart Home Tech",
+    "id": 1020,
+    "description": "Remote viewing for home surveillance cameras.",
+    "size": 70,
+    "reviews": 5500,
+    "ratingAvg": 4.1,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4IkPPoIyBocrfAnAdcYbqRrUJGFYb5MKBw&s",
+    "title": "Music Mixer DJ",
+    "companyName": "Beat Drop Apps",
+    "id": 1021,
+    "description": "Create and mix your own music tracks.",
+    "size": 500,
+    "reviews": 13000,
+    "ratingAvg": 4.4,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPMYNUvs3Ezcfm0f0oouxtBHJlBucqJBXlw&s",
+    "title": "Classic Sudoku Puzzle",
+    "companyName": "Brain Teaser Games",
+    "id": 1022,
+    "description": "A classic Sudoku game with multiple difficulty levels.",
+    "size": 25,
+    "reviews": 40000,
+    "ratingAvg": 4.8,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/mIeFAAAdgoCh3BwgYuS8iRFVzquVl1Zocwpr06ndr3v2JWtdJ4JkKG4XbFtAbwSezWxo",
+    "title": "Retail Discount Finder",
+    "companyName": "Bargain Hunt Inc.",
+    "id": 1023,
+    "description": "Find the best deals and coupons in your area.",
+    "size": 38,
+    "reviews": 7000,
+    "ratingAvg": 4.0,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 2100 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/gmR0kF1AT7WdvmSFVpQGzAj9hr665Chxjat95-JP0iPteLAu7fC9EmJMrXFlb6ecVA",
+    "title": "Cloud File Manager",
+    "companyName": "Data Storage Corps",
+    "id": 1024,
+    "description": "Manage all your cloud storage services in one place.",
+    "size": 48,
+    "reviews": 21000,
+    "ratingAvg": 4.3,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 550 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ETue4zmiUb6RMnzqNIzNoP1aANtvcETjcuacJSz2_ymsM3f9llogAb4Q4u3Iu6WXdfc",
+    "title": "Pet Care Diary",
+    "companyName": "Animal Love Software",
+    "id": 1025,
+    "description": "Track your pet's health, vet visits, and feeding schedule.",
+    "size": 52,
+    "reviews": 4500,
+    "ratingAvg": 4.7,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/JFeyvk0QXOjSyHR8ghkjTV1Co7sXgiDdmoNPme4DZG0iG8ev2UYFJfvg1KhtAGrcfA=w526-h296-rw",
+    "title": "Pixel Shooter Arena",
+    "companyName": "Retro Gaming Vault",
+    "id": 1026,
+    "description": "An action-packed 2D pixel-art shooting game.",
+    "size": 350,
+    "reviews": 55000,
+    "ratingAvg": 4.4,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 27000 }
+    ]
+  },
+  {
+    "image": "https://i.etsystatic.com/29989357/r/il/a8de1e/3916481268/il_fullxfull.3916481268_2w9z.jpg",
+    "title": "Vehicle Service Log",
+    "companyName": "Car Maintenance Tools",
+    "id": 1027,
+    "description": "Keep track of all your car's maintenance and repairs.",
+    "size": 28,
+    "reviews": 3200,
+    "ratingAvg": 4.6,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://media.globalnews.ca/videostatic/344/751/Global%20News.png",
+    "title": "Global News Feed",
+    "companyName": "Current Events LLC",
+    "id": 1028,
+    "description": "Aggregated news from top sources around the world.",
+    "size": 60,
+    "reviews": 14000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 6400 }
+    ]
+  }
+]

@@ -1,5 +1,7 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaAppStore, FaGithub, FaHome } from "react-icons/fa";
+import { IoHomeOutline } from "react-icons/io5";
+import { MdInstallDesktop } from "react-icons/md";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
                 : "text-gray-700 hover:text-purple-700 px-4 py-2"
             }
           >
-            Home
+           <IoHomeOutline /> Home
           </NavLink>
         </li>
         <li>
@@ -27,7 +29,7 @@ const Navbar = () => {
                 : "text-gray-700 hover:text-purple-700 px-4 py-2"
             }
           >
-            Apps
+           <FaAppStore /> Apps
           </NavLink>
         </li>
         <li>
@@ -39,7 +41,7 @@ const Navbar = () => {
                 : "text-gray-700 hover:text-purple-700 px-4 py-2"
             }
           >
-            Installation
+           <MdInstallDesktop /> Installation
           </NavLink>
         </li>
       </ul>
