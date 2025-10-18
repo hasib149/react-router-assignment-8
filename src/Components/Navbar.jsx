@@ -17,7 +17,7 @@ const Navbar = () => {
                 : "text-gray-700 hover:text-purple-700 px-4 py-2"
             }
           >
-           <IoHomeOutline /> Home
+            <IoHomeOutline /> Home
           </NavLink>
         </li>
         <li>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 : "text-gray-700 hover:text-purple-700 px-4 py-2"
             }
           >
-           <FaAppStore /> Apps
+            <FaAppStore /> Apps
           </NavLink>
         </li>
         <li>
@@ -41,7 +41,7 @@ const Navbar = () => {
                 : "text-gray-700 hover:text-purple-700 px-4 py-2"
             }
           >
-           <MdInstallDesktop /> Installation
+            <MdInstallDesktop /> My Installation
           </NavLink>
         </li>
       </ul>

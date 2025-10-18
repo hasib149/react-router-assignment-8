@@ -1,17 +1,38 @@
 import React, { useEffect, useState } from "react";
-import { FaStar } from "react-icons/fa";
+import { FaDownload, FaStar } from "react-icons/fa";
+import { GoDownload } from "react-icons/go";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [install, setinstall] = useState([]);
+  // const [sortOrder, setSortOrder] = useState("none");
   useEffect(() => {
     const saveList = JSON.parse(localStorage.getItem("installation")) || [];
     setinstall(saveList);
   }, []);
   // remove
   const handleUninstall = (id) => {
-    const updated = install.filter((app) => app.id !== id);
+    const stored = JSON.parse(localStorage.getItem("installation")) || [];
+
+    const updated = stored.filter((app) => app.id !== id);
+
+    localStorage.setItem("installation", JSON.stringify(updated));
+
     setinstall(updated);
+    toast.success("Uninistall complete");
   };
+
+  const sortedItem = (sortOrder) => {
+    // console.log(sortOrder);
+    if (sortOrder === "downloads-asc") {
+      setinstall([...install].sort((a, b) => a.downloads - b.downloads));
+    } else if (sortOrder === "downloads-desc") {
+      setinstall([...install].sort((a, b) => b.downloads - a.downloads));
+    } else {
+      return install;
+    }
+  };
+
   return (
     <div>
       <div className="text-center space-y-2.5 mt-16">
@@ -20,21 +41,22 @@ const Installation = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
-      <div className="flex justify-between items-center py-7 mt-10">
-        <h2>0 apps found</h2>
+      <div className="flex justify-between items-center py-7 pl-8 pr-8 mt-10">
+        <h2 className="font-semibold">
+          <span className="text-2xl">({install.length})</span> apps found
+        </h2>
         <label className="form-control w-full max-w-xs">
           <select
             className="select select-bordered"
-            // value={sortOrder}
-            // onChange={(e) => setSortOrder(e.target.value)}
+            onChange={(e) => sortedItem(e.target.value)}
           >
             <option className="font-semibold" value="none">
-              Sort by price
+              Sort by downloads
             </option>
-            <option className="font-semibold" value="price-asc">
+            <option className="font-semibold" value="downloads-asc">
               Low-to-High
             </option>
-            <option className="font-semibold" value="price-desc">
+            <option className="font-semibold" value="downloads-desc">
               High-to-Low
             </option>
           </select>
@@ -54,8 +76,8 @@ const Installation = () => {
                 <div className="space-y-4 flex-1">
                   <h1 className="text-3xl font-semibold">{p.title}</h1>
                   <div className="flex gap-6 flex-wrap">
-                    <div className="font-semibold text-[#00D390]">
-                      {p.downloads}M
+                    <div className="font-semibold text-[#00D390] flex items-center gap-0.5">
+                      <GoDownload /> {p.downloads}M
                     </div>
                     <div className="font-semibold text-[#FF8811] flex gap-1 items-center">
                       <FaStar /> {p.ratingAvg}
