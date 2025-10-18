@@ -4,11 +4,13 @@ import Home from "../Components/Home";
 import Apps from "../Components/Apps";
 import Installation from "../Components/Installation";
 import UserDetails from "../Components/UserDetails";
+import ErrorPage from "../Components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: Mainlayout,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,

@@ -9,12 +9,14 @@ import useProduct from "../CustomHooks/useProduct";
 import ProductCard from "./ProductCard";
 import { Link } from "react-router";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import Loading from "./Loading";
 
 const Home = () => {
-  const { loading, error, products } = useProduct();
+  const { loading, products } = useProduct();
   // console.log(products);
 
   const featuredProducts = products?.slice(0, 8);
+  if (loading) return <Loading></Loading>;
   return (
     <div>
       {/* Hero Section */}
@@ -112,11 +114,15 @@ const Home = () => {
         </div>
         {/* card */}
         <div className="mt-14">
-          <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredProducts?.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          {loading ? (
+            <Loading></Loading>
+          ) : (
+            <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {featuredProducts?.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          )}
           <div className="flex justify-center mt-6">
             <Link
               to="/apps"

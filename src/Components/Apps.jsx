@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import useProduct from "../CustomHooks/useProduct";
 import ProductCard from "./ProductCard";
+import Loading from "./Loading";
 
 const Apps = () => {
-  const { loading, error, products } = useProduct();
-  console.log(products);
+  const { loading, products } = useProduct();
+  // console.log(products);
   const [search, setSearch] = useState("");
   const trim = search.trim().toLocaleLowerCase();
   const searchProducts = trim
@@ -12,6 +13,7 @@ const Apps = () => {
         product?.title?.toLocaleLowerCase().includes(trim)
       )
     : products;
+  if (loading) return <Loading></Loading>;
 
   return (
     <div className="mx-auto container">
@@ -50,15 +52,21 @@ const Apps = () => {
           />
         </label>
       </div>
-      <div className="container mt-8 mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {searchProducts && searchProducts.length > 0 ? (
-          searchProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))
-        ) : (
-          <p className="text-center col-span-full p-20 text-4xl bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300">No Apps found</p>
-        )}
-      </div>
+      {search ? (
+        <Loading></Loading>
+      ) : (
+        <div className="container mt-8 mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {searchProducts && searchProducts.length > 0 ? (
+            searchProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))
+          ) : (
+            <p className="text-center col-span-full p-20 text-4xl bg-gradient-to-r from-purple-500 via-purple-400 to-purple-300">
+              No Apps found
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 };

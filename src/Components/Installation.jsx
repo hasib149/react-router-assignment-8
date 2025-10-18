@@ -2,13 +2,21 @@ import React, { useEffect, useState } from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 import { GoDownload } from "react-icons/go";
 import { toast } from "react-toastify";
+import Loading from "./Loading";
 
 const Installation = () => {
   const [install, setinstall] = useState([]);
-  // const [sortOrder, setSortOrder] = useState("none");
+  const [loading, setloading] = useState(true);
+
   useEffect(() => {
-    const saveList = JSON.parse(localStorage.getItem("installation")) || [];
-    setinstall(saveList);
+    const delay = setTimeout(() => {
+      const saveList = JSON.parse(localStorage.getItem("installation")) || [];
+      setinstall(saveList);
+      setloading(false);
+    }, 1000);
+    return () => {
+      clearTimeout(delay);
+    };
   }, []);
   // remove
   const handleUninstall = (id) => {
@@ -32,6 +40,7 @@ const Installation = () => {
       return install;
     }
   };
+  if (loading) return <Loading></Loading>;
 
   return (
     <div>
@@ -65,7 +74,7 @@ const Installation = () => {
       {/* local add card */}
       <div className="space-y-6 mb-10">
         {install.map((p) => (
-          <div className="hero bg-base-300">
+          <div key={p.id} className="hero bg-base-300">
             <div className="hero-content w-full flex-col lg:flex-row justify-between items-start lg:items-center text-left gap-6">
               <div className="flex items-start gap-6 w-full">
                 <img

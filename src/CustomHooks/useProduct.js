@@ -7,10 +7,15 @@ const useProduct = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios("../data.json")
-      .then((data) => setProducts(data.data))
-      .catch((err) => setError(err))
-      .finally(() => setLoading(false));
+    const delay = setTimeout(() => {
+      axios("../data.json")
+        .then((data) => setProducts(data.data))
+        .catch((err) => setError(err))
+        .finally(() => setLoading(false));
+    }, 500);
+    return () => {
+      clearTimeout(delay);
+    };
   }, []);
 
   return { products, loading, error };
