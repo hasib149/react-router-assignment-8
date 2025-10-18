@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router";
 import useProduct from "../CustomHooks/useProduct";
 import {
@@ -14,6 +14,7 @@ import {
 import { toast } from "react-toastify";
 
 const UserDetails = () => {
+  const [installed, setInstalled] = useState(false);
   const { id } = useParams();
   const { products, loading } = useProduct();
   const product = products.find((p) => String(p.id) === id);
@@ -58,6 +59,8 @@ const UserDetails = () => {
 
     const updateList = [...existingList, product];
     localStorage.setItem("installation", JSON.stringify(updateList));
+    setInstalled(true);
+    toast.success("✅ Successfully Installed!");
   };
 
   return (
@@ -79,16 +82,10 @@ const UserDetails = () => {
             Developed by <span className="text-purple-500">{companyName}</span>
           </p>
           <div className="border-b border-gray-400 my-3"></div>
-
           {/* Stats */}
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-16">
             <div className="flex items-center gap-2 sm:gap-4">
-              <img
-                src="/icon-downloads.png"
-                alt=""
-                className="w-6 h-6 sm:w-8 sm:h-8"
-              />
-              <div>
+              <div className="text-center">
                 <span className="font-semibold text-sm sm:text-base">
                   Downloads
                 </span>
@@ -97,12 +94,7 @@ const UserDetails = () => {
             </div>
 
             <div className="flex items-center gap-2 sm:gap-4">
-              <img
-                src="/icon-ratings.png"
-                alt=""
-                className="w-6 h-6 sm:w-8 sm:h-8"
-              />
-              <div>
+              <div className="text-center">
                 <span className="font-semibold text-sm sm:text-base">
                   Average Ratings
                 </span>
@@ -111,12 +103,7 @@ const UserDetails = () => {
             </div>
 
             <div className="flex items-center gap-2 sm:gap-4">
-              <img
-                src="/icon-review.png"
-                alt=""
-                className="w-6 h-6 sm:w-8 sm:h-8"
-              />
-              <div>
+              <div className="text-center">
                 <span className="font-semibold text-sm sm:text-base">
                   Total Reviews
                 </span>
@@ -124,14 +111,18 @@ const UserDetails = () => {
               </div>
             </div>
           </div>
-
           {/* Button */}
           <div className="mt-6">
             <button
               onClick={handleAddtoInstallation}
-              className="btn text-white bg-[#00D390] w-full sm:w-auto"
+              disabled={installed}
+              className={`btn text-white w-full sm:w-auto transition-all duration-300 ${
+                installed
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-[#00D390] hover:shadow-lg hover:shadow-[#00D390]/50"
+              }`}
             >
-              Install Now ({size} MB)
+              {installed ? "Installed" : `Install Now (${size} MB)`}
             </button>
           </div>
         </div>
