@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { toast } from "react-toastify";
 
 const UserDetails = () => {
   const { id } = useParams();
@@ -21,6 +22,9 @@ const UserDetails = () => {
     return (
       <p className=" py-10 ">
         <img className="mx-auto" src="/App-Error.png" alt="" />
+        <h2 className="text-3xl font-semibold pt-7 text-purple-400 text-center ">
+          Oops Page not found
+        </h2>
         <div className="flex justify-center mt-14">
           <Link
             to="/"
@@ -42,6 +46,19 @@ const UserDetails = () => {
     title,
     companyName,
   } = product;
+  const handleAddtoInstallation = () => {
+    const existingList = JSON.parse(localStorage.getItem("installation")) || [];
+    console.log(existingList);
+    const isDuplicate = existingList.some((p) => p.id === product.id);
+
+    if (isDuplicate) {
+      toast("already in installation!");
+      return;
+    }
+
+    const updateList = [...existingList, product];
+    localStorage.setItem("installation", JSON.stringify(updateList));
+  };
 
   return (
     <div className="container mx-auto px-4">
@@ -110,7 +127,10 @@ const UserDetails = () => {
 
           {/* Button */}
           <div className="mt-6">
-            <button className="btn text-white bg-[#00D390] w-full sm:w-auto">
+            <button
+              onClick={handleAddtoInstallation}
+              className="btn text-white bg-[#00D390] w-full sm:w-auto"
+            >
               Install Now ({size} MB)
             </button>
           </div>
