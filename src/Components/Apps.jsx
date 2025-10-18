@@ -21,7 +21,7 @@ const Apps = () => {
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-between items-center mt-10 mx-auto container gap-4">
+      <div className="flex flex-col sm:flex-row justify-between items-center px-8 mt-10 mx-auto container gap-4">
         <h2 className="font-bold text-lg sm:text-xl">
           ({searchProducts.length}) Apps Found
         </h2>
