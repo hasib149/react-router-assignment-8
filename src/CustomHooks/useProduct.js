@@ -12,7 +12,7 @@ const useProduct = () => {
         .then((data) => setProducts(data.data))
         .catch((err) => setError(err))
         .finally(() => setLoading(false));
-    }, 500);
+    }, 300);
     return () => {
       clearTimeout(delay);
     };

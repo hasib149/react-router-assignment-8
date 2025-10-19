@@ -1,19 +1,28 @@
-import React, { useState } from "react";
 import useProduct from "../CustomHooks/useProduct";
 import ProductCard from "./ProductCard";
 import Loading from "./Loading";
+import { useState } from "react";
 
 const Apps = () => {
   const { loading, products } = useProduct();
-  // console.log(products);
   const [search, setSearch] = useState("");
-  const trim = search.trim().toLocaleLowerCase();
+  const [isSearching, setIsSearching] = useState(false);
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+    setIsSearching(true);
+
+    setTimeout(() => {
+      setIsSearching(false);
+    }, 300);
+  };
+
+  const trim = search.trim().toLowerCase();
   const searchProducts = trim
-    ? products.filter((product) =>
-        product?.title?.toLocaleLowerCase().includes(trim)
-      )
+    ? products.filter((product) => product?.title?.toLowerCase().includes(trim))
     : products;
-  if (loading) return <Loading></Loading>;
+
+  if (loading) return <Loading />;
 
   return (
     <div className="mx-auto container">
@@ -23,6 +32,7 @@ const Apps = () => {
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
+
       <div className="flex flex-col sm:flex-row justify-between items-center px-8 mt-10 mx-auto container gap-4">
         <h2 className="font-bold text-lg sm:text-xl">
           ({searchProducts.length}) Apps Found
@@ -45,18 +55,21 @@ const Apps = () => {
           <input
             type="search"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={handleSearch}
             required
             placeholder="Search"
             className="w-full pl-10 pr-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </label>
       </div>
-      {search ? (
-        <Loading></Loading>
+
+      {loading || isSearching ? (
+        <div className="mt-8 flex justify-center items-center h-40">
+          <Loading />
+        </div>
       ) : (
         <div className="container mt-8 mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {searchProducts && searchProducts.length > 0 ? (
+          {searchProducts.length > 0 ? (
             searchProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))

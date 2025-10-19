@@ -13,7 +13,7 @@ const Installation = () => {
       const saveList = JSON.parse(localStorage.getItem("installation")) || [];
       setinstall(saveList);
       setloading(false);
-    }, 1000);
+    }, 300);
     return () => {
       clearTimeout(delay);
     };
@@ -71,42 +71,48 @@ const Installation = () => {
           </select>
         </label>
       </div>
-      {/* local add card */}
+      {/* add card */}
       <div className="space-y-6 mb-10">
-        {install.map((p) => (
-          <div key={p.id} className="hero bg-base-300">
-            <div className="hero-content w-full flex-col lg:flex-row justify-between items-start lg:items-center text-left gap-6">
-              <div className="flex items-start gap-6 w-full">
-                <img
-                  src={p.image}
-                  className="w-28 h-28 object-cover rounded-lg shadow-2xl"
-                  alt={p.title}
-                />
-                <div className="space-y-4 flex-1">
-                  <h1 className="text-3xl font-semibold">{p.title}</h1>
-                  <div className="flex gap-6 flex-wrap">
-                    <div className="font-semibold text-[#00D390] flex items-center gap-0.5">
-                      <GoDownload /> {p.downloads}M
-                    </div>
-                    <div className="font-semibold text-[#FF8811] flex gap-1 items-center">
-                      <FaStar /> {p.ratingAvg}
-                    </div>
-                    <div className="font-semibold text-gray-700">
-                      {p.size}MB
+        {install.length === 0 ? (
+          <p className="text-center text-gray-500 text-xl mt-10">
+            No apps found
+          </p>
+        ) : (
+          install.map((p) => (
+            <div key={p.id} className="hero bg-base-300">
+              <div className="hero-content w-full flex-col lg:flex-row justify-between items-start lg:items-center text-left gap-6">
+                <div className="flex items-start gap-6 w-full">
+                  <img
+                    src={p.image}
+                    className="w-28 h-28 object-cover rounded-lg shadow-2xl"
+                    alt={p.title}
+                  />
+                  <div className="space-y-4 flex-1">
+                    <h1 className="text-3xl font-semibold">{p.title}</h1>
+                    <div className="flex gap-6 flex-wrap">
+                      <div className="font-semibold text-[#00D390] flex items-center gap-0.5">
+                        <GoDownload /> {p.downloads}M
+                      </div>
+                      <div className="font-semibold text-[#FF8811] flex gap-1 items-center">
+                        <FaStar /> {p.ratingAvg}
+                      </div>
+                      <div className="font-semibold text-gray-700">
+                        {p.size}MB
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              {/* Button */}
-              <div
-                onClick={() => handleUninstall(p.id)}
-                className="btn self-start lg:self-center lg:ml-auto bg-[#00D390] text-white"
-              >
-                Uninstall
+                {/* Button */}
+                <div
+                  onClick={() => handleUninstall(p.id)}
+                  className="btn self-start lg:self-center lg:ml-auto bg-[#00D390] text-white"
+                >
+                  Uninstall
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );
