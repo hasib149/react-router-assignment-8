@@ -1,4 +1,4 @@
-1.App Name:
+1.Website Name:
 This project is a website created for **MyApp**.  
  The website provides information about the app, its features, and download links.
 
